@@ -6,14 +6,31 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Tutorialzine Electron Experiment</title>
+    <title>Electron News App</title>
 
     <link rel="stylesheet" href="./css/jquery.flipster.min.css">
     <link rel="stylesheet" href="./css/styles.css">
 
+    <style>
+        img {
+            float: center;
+            margin: 0 0 0 0;
+        }
+    </style>
+
+    <script>
+        function hello() {
+            location.reload();
+        }
+
+        function closeWindow() {
+            this.close();
+        }
+    </script>
 </head>
 
 <body>
+    <span class="close" onclick="closeWindow()">&times;</span>
 
     <div id="loader" class="sk-circle">
         <div class="sk-circle1 sk-child"></div>
@@ -40,11 +57,17 @@
         </ul>
     </div>
 
-
-
-    <p class="stats"></p>
-    <div class="copyrights"></div>
-
+    <div class="container">
+        <div class="row">
+            <div class="home">
+                <a href="">
+                    <img src="https://cdn0.iconfinder.com/data/icons/seo-smart-pack/128/grey_new_seo2-32-512.png" onclick="hello()" alt="Home" style="width:100px; height:100px;">
+                </a>
+            </div>
+        </div>
+        <!--<p class="stats"></p>-->
+        <div class="copyrights"></div>
+    </div>
     <script>
         window.$ = window.jQuery = require('./js/jquery.min.js');
     </script>
