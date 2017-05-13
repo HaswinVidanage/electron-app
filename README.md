@@ -1,4 +1,4 @@
-# Electron-App
+# Electron-App 
 
 The project contains a simple news app made using Electron Js
 
